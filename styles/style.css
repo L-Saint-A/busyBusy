@@ -1,4 +1,14 @@
-h1 {
-    font-size: 50px;
-    color: hotpink;
+.bar {
+    width: 400px;
+    height: 60px;
+    border: black 2px solid;
+    background-color: greenyellow;
+    @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        10% {
+          transform: rotate(360deg);
+        }
+      }
 }
