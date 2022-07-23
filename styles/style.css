@@ -19,7 +19,7 @@ body {
 }
 
 .fillBar {
-  border: 2px white solid;
+  border: 2px greenyellow solid;
   width: 100px;
   height: 50px;
   position: relative;
@@ -30,7 +30,7 @@ body {
     height: 36px;
     width: 14px;
     padding: 10px;
-    background-color: red;
+    background-color: greenyellow;
     position: absolute;
     font-size: 40px;
     color: #fff;
@@ -51,6 +51,6 @@ body {
     width: 15px;
   }
   100% {
-      width: 38px;
+      width: 44px;
   }
 }
