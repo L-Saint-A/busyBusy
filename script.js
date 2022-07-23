@@ -8,7 +8,7 @@ let filler = $(`.filler`);
 
 console.log(filler)
 
-if (filler.attr(`width:`, `>= 100px`) ) {
+if (filler.attr(`width:`, `>= 100px`, true) ) {
     filler.attr(`background-color`, `blue`)
 }
 
