@@ -4,7 +4,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *, *:before, *:after {box-sizing: inherit}
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 .wrapper { max-width: 1200px; width: 85%; margin: 0 auto;}
-
 @font-face {
   font-family: blueScreen;
   src: url(../assets/Blue\ Screen\ Personal\ Use.ttf);
@@ -12,14 +11,23 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 body {
   background-image: url(../assets/spceBG.jpg);
 }
-
 p {
   font-family: blueScreen;
   color: rgba(1, 195, 243, 0.7);
   font-size: 22px;
   letter-spacing: 12px;
 }
-
+.fillBarModule {
+  display: flex;
+}
+.fillBarText {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.fillBarModule p {
+  transform: rotate(-90deg);
+}
 .fillBar {
   width: 200px;
   height: 200px;
@@ -27,41 +35,37 @@ p {
   padding: 0;
 }
 .filler {
-  height: 12px;
+  height: 20px;
   width: 0px;
-  padding: 10px;
-  background-color: rgba(1, 195, 243, 0.7);
-  position: absolute;
-  font-size: 20px;
+  background: rgb(1,195,243);
+  background: linear-gradient(90deg, rgba(1,195,243,0.7) 0%, rgba(255,207,84,0.7) 100%);
   color: #fff;
   animation: fill 1.5s ease-in-out infinite;
   -webkit-animation: filler 2.4s ease-in-out 0s infinite 
 }
 @keyframes filler  {
 0% {
-  width: 44px;
+  width: 44%;
 }
 25% {
-  width: 4px;
+  width: 4%;
 }
 50% {
   width: 85%;
 }
 75% {
-  width: 15px;
+  width: 15%;
 }
 100% {
-  width: 44px;
+  width: 44%;
 }
 }
 .filler1 {
-  height: 12px;
+  height: 20px;
   width: 4px;
-  padding: 10px;
   background-color: rgba(1, 195, 243, 0.7);
   position: absolute;
   top: 20px;
-  font-size: 40px;
   color: #fff;
   animation: fill 1.5s ease-in-out infinite;
   -webkit-animation: filler1 2.4s ease-in-out 0s infinite 
@@ -84,67 +88,63 @@ p {
 }
 }
 .filler2 {
-  height: 12px;
-  width: 4px;
-  padding: 10px;
+  height: 20px;
+  width: 0px;
   background-color: rgba(1, 195, 243, 0.7);
   position: absolute;
   top: 40px;
   font-size: 40px;
   color: #fff;
   animation: fill 1.5s ease-in-out infinite;
-  -webkit-animation: filler1 2.4s ease-in-out 0s infinite 
+  -webkit-animation: filler2 2.4s ease-in 0s infinite 
 }
-@keyframes filler1  {
+@keyframes filler2  {
 0% {
-  width: 14px;
+  width: 34%;
 }
 25% {
-  width: 4px;
+  width: 88%;
 }
 50% {
   width: 55%;
 }
 75% {
-  width: 35px;
+  width: 75%;
 }
 100% {
-  width: 14px;
+  width: 34%;
 }
 }
 .filler3 {
-  height: 12px;
+  height: 20px;
   width: 4px;
-  padding: 10px;
   background-color: rgba(1, 195, 243, 0.7);
   position: absolute;
   top: 60px;
-  font-size: 40px;
   color: #fff;
   animation: fill 1.5s ease-in-out infinite;
   -webkit-animation: filler3 2.4s ease-in-out 0s infinite 
 }
 @keyframes filler3  {
 0% {
-  width: 14px;
+  width: 14%;
 }
 25% {
-  width: 4px;
+  width: 66%;
 }
 50% {
-  width: 55%;
+  width: 75%;
 }
 75% {
-  width: 35px;
+  width: 55%;
 }
 100% {
-  width: 14px;
+  width: 14%;
 }
 }
 .filler4 {
-  height: 12px;
+  height: 20px;
   width: 4px;
-  padding: 10px;
   background-color: rgba(1, 195, 243, 0.7);
   position: absolute;
   top: 80px;
@@ -155,25 +155,24 @@ p {
 }
 @keyframes filler4  {
 0% {
-  width: 14px;
+  width: 44%;
 }
 25% {
-  width: 4px;
+  width: 0%;
 }
 50% {
-  width: 55%;
+  width: 67%;
 }
 75% {
-  width: 35px;
+  width: 5%;
 }
 100% {
-  width: 14px;
+  width: 44%;
 }
 }
 .filler5 {
-  height: 12px;
+  height: 20px;
   width: 4px;
-  padding: 10px;
   background-color: rgba(1, 195, 243, 0.7);
   position: absolute;
   top: 100px;
@@ -184,25 +183,24 @@ p {
 }
 @keyframes filler5  {
 0% {
-  width: 14px;
+  width: 11%;
 }
 25% {
-  width: 4px;
+  width: 4%;
 }
 50% {
-  width: 55%;
+  width: 8%;
 }
 75% {
-  width: 35px;
+  width: 5%;
 }
 100% {
-  width: 14px;
+  width: 11%;
 }
 }
 .filler6 {
-  height: 12px;
+  height: 20px;
   width: 4px;
-  padding: 10px;
   background-color: rgba(1, 195, 243, 0.7);
   position: absolute;
   top: 120px;
@@ -213,25 +211,24 @@ p {
 }
 @keyframes filler6  {
 0% {
-  width: 14px;
+  width: 84px;
 }
 25% {
-  width: 4px;
+  width: 74px;
 }
 50% {
-  width: 55%;
+  width: 85px;
 }
 75% {
-  width: 35px;
+  width: 75px;
 }
 100% {
-  width: 14px;
+  width: 84px;
 }
 }
 .filler7 {
-  height: 12px;
+  height: 20px;
   width: 4px;
-  padding: 10px;
   background-color: rgba(1, 195, 243, 0.7);
   position: absolute;
   top: 140px;
@@ -242,25 +239,24 @@ p {
 }
 @keyframes filler7  {
 0% {
-  width: 14px;
+  width: 56%;
 }
-25% {
-  width: 4px;
+20% {
+  width: 50%;
 }
-50% {
+55% {
   width: 55%;
 }
-75% {
-  width: 35px;
+80% {
+  width: 35%;
 }
 100% {
-  width: 14px;
+  width: 56%;
 }
 }
 .filler8 {
-  height: 12px;
+  height: 20px;
   width: 4px;
-  padding: 10px;
   background-color: rgba(1, 195, 243, 0.7);
   position: absolute;
   top: 160px;
